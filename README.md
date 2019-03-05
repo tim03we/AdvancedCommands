@@ -3,7 +3,7 @@
 With AdvancedCommands, you have the opportunity to bring new commands into play. Incidentally, you can also change all the messages if you enter the respective command.
 
 Command | Description | Default | Alias | Permissions
---------- | ------------------- | ------- | ------
+--------- | ------------------- | ------- | ---------- | -----------
 /gamemode | Change your game mode | op | gm | advanced.gamemode.use
 /heal | Fill your hearts | op | none | advanced.heal.use
 /feed | Fill up your clubs | op | none | advanced.feed.use
