@@ -1,0 +1,11 @@
+---
+# Dont change this!
+version: "1.0.1"
+
+# Decide here, with "true" or "false" whether the command should be activated or deactivated.
+gamemode: true
+fly: true
+heal: true
+feed: true
+vanish: true
+...
