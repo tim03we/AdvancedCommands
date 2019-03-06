@@ -4,11 +4,12 @@ With AdvancedCommands, you have the opportunity to bring new commands into play.
 
 Command | Description | Default | Alias | Permissions
 --------- | ------------------- | ------- | ---------- | -----------
-/gamemode | Change your game mode | op | gm | advanced.gamemode.use
-/heal | Fill your hearts | op | none | advanced.heal.use
-/feed | Fill up your clubs | op | none | advanced.feed.use
-/fly | Change between the Fly mode | op | none | advanced.fly.use
-/vanish | Make yourself invisible | op | v | advanced.vanish.use
+/gamemode <0:1:2:3> <player> | Change your game mode | op | gm | advanced.gamemode.use
+/heal <player> | Fill your hearts | op | none | advanced.heal.use
+/feed <player> | Fill up your clubs | op | none | advanced.feed.use
+/fly <player> | Change between the Fly mode | op | none | advanced.fly.use
+/vanish <player> | Make yourself invisible | op | v | advanced.vanish.use
+/repair | Repair your item | op | none | advanced.repair.use
 
 ----------------
 
