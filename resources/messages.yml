@@ -1,23 +1,37 @@
 ---
 ###################
 # Dont change this!
-version: "1.0.4"
+version: "1.0.6"
 ###################
 PlayerNotFound: "Player not found!"
+
+# Gamemode Messages
 GamemodeChange-Message: "Your game mode has been changed."
 GamemodeChangeOther-Message: "You have changed the game mode of {player}."
+
+# Feed Messages
 Feed-Message: "Your hunger clubs were filled up."
 FeedOther-Message: "You filled up the hunger clubs of {player}."
+
+# Heal Messages
 Heal-Message: "Your hearts have been filled up now."
 HealOther-Message: "You filled up the hearts of {player}."
+
+# Fly Messages
 FlyEnabled-Message: "Your fly mode has been activated."
 FlyEnabledOther-Message: "You have activated Fly mode for {player}."
 FlyDisabled-Message: "Your fly mode has been deactivated."
 FlyDisabledOther-Message: "You have deactivated Fly mode for {player}."
+PlayerCreative-Message: "You are currently in creative mode!"
+PlayerCreativeOther-Message: "This player is still in creative mode!"
+
+# Vanish Messages
 VanishEnabled-Message: "You are now invisible."
 VanishEnabledOther-Message: "You have now made {player} invisible."
 VanishDisabled-Message: "You are now visible again."
 VanishDisabledOther-Message: "You have made {player} visible again."
-PlayerCreative-Message: "You are currently in creative mode!"
-PlayerCreativeOther-Message: "This player is still in creative mode!"
+
+# Repair Messages
+RepairSuccess-Message: "Item {item} has been successfully repaired."
+CantRepair-Message: "You can not fix this item."
 ...
