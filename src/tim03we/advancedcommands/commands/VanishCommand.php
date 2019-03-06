@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace tim03we\advancedcommands;
+namespace tim03we\advancedcommands\commands;
 
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;

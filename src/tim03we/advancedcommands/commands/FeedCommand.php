@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace tim03we\advancedcommands;
+namespace tim03we\advancedcommands\commands;
 
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
@@ -12,11 +12,11 @@ use pocketmine\utils\TextFormat as TF;
 use pocketmine\utils\Config;
 use tim03we\advancedcommands\Main;
 
-class HealCommand extends Command {
+class FeedCommand extends Command {
 	
 	public function __construct(Main $plugin) {
-		parent::__construct("heal", "AdvancedCommands", "/heal <player>");
-		$this->setPermission("advanced.heal.use");
+		parent::__construct("feed", "AdvancedCommands", "/feed <player>");
+		$this->setPermission("advanced.feed.use");
 		$this->plugin = $plugin;
 	}
 	
@@ -31,18 +31,15 @@ class HealCommand extends Command {
         $settings = new Config($this->plugin->getDataFolder() . "messages.yml", Config::YAML);
         if(isset($args[0])){
             $player2 = $this->plugin->getServer()->getPlayer($args[0]);
-            if($player2 == null) {
-                $sender->sendMessage($settings->get("PlayerNotFound"));
-                return true;
-            }
+            $player2->setFood(20);
             $hom = $player2->getName();
-            $player2->setHealth(20);
-            $player2->sendMessage($settings->get("Heal-Message"));
-            $sender->sendMessage($this->convert($settings->get("HealOther-Message"), $hom));
+            $player2->sendMessage($settings->get("Feed-Message"));
+            $sender->sendMessage($this->convert($settings->get("FeedOther-Message"), $hom));
         } else {
-            $sender->setHealth(20);
-            $sender->sendMessage($settings->get("Heal-Message"));
+            $sender->setFood(20);
+            $sender->sendMessage($settings->get("Feed-Message"));
         }
+        $issuer = $sender->getName();
         return false;
     }
 
